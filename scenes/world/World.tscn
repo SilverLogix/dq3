@@ -1,0 +1,14 @@
+[gd_resource type="PackedScene" format=3]
+
+[sub_resource type="WorldEnvironment" id="WorldEnvironment"]
+background/canvas_cull_mask=4294967295
+background/mode=0
+glow/enabled=false
+
+[node name="World" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Player" scene_file_path="res://scenes/player/Player.tscn" parent="." =]
+
+[node name="TileMap" type="TileMap" parent="."]
